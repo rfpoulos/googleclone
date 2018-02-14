@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Google Clone</title>
+</head>
+<style>
+    html{
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        align-items: stretch;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 0 1em 0;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        padding: 1em 0 1em 0;
+
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+    li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .icon {
+        width: 1em;
+    }
+    main {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10rem;
+        padding-bottom: .1em;
+    }
+    .search {
+        padding-bottom: 1em;
+    }
+    input {
+        font-size: 1em;
+    }
+    .buttons {
+        margin-bottom: 10em;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li>About</li>
+            <li>Store</li>
+        </ul>
+        <ul>
+            <li>Gmail</li>
+            <li>Images</li>
+            <li><img class="icon" src="./grid.png"></li>
+            <li><img class="icon" src="./bell.png"></li>
+            <li>content</li>
+        </ul>
+    </header>
+    <main>
+        <div class="logo">
+            Google
+        </div>
+        <div class="search">
+            <input size="56"/>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I'm feeling lucky. . .">
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Advertising</li>
+            <li>Buisiness</li>
+        </ul>
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </footer>
+</body>
+</html>
