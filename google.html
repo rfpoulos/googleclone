@@ -16,7 +16,10 @@
         height: 100%;
     }
     main {
+        display: relative;
         text-align: center;
+        width: 100%;
+
     }
     a {
         text-decoration: none;
@@ -29,10 +32,10 @@
 
     header {
         top: 0;
-        position: relative;
+        position: fixed;
         width: 100%;
-        height: 5%;
-        display: inline-flex;
+        padding: 1% 0 1% 0;
+        display: inline-block;
     }
     footer {
         background-color: lightgray;
@@ -67,8 +70,21 @@
         margin-right: 1rem;
     }
     h1 {
+        display: inline-block;
         font-family: 'Roboto', sans-serif;
         font-size: 10em;
+        margin: 0;
+        margin-top: 20%;
+        margin-bottom: 2%;
+    }
+    input {
+        display: inline-block;
+        margin: 0, auto, 0, auto;
+        font-size: 1em;
+        justify-content: center;
+    }
+    .icon {
+        width: 1em;
     }
 </style>
 <body>
@@ -79,15 +95,17 @@
         </ul><ul class="right">
             <li><a href="">Gmail</a></li>
             <li><a href="">Images</a></li>
-            <li><a href=""><img src=""/>Dropdown</a></li> <!-- Hold for dropdown menu-->
-            <li><a href=""><img src=""/>Notifications</a></li> <!-- Hold for notifications-->
+            <li><a href=""><img class="icon" src="./grid.png"/></a></li> <!-- Hold for dropdown menu-->
+            <li><a href=""><img class="icon" src="./bell.png"/></a></li> <!-- Hold for notifications-->
             <li><a href=""><img src=""/>User Image</a></li> <!-- Hold for user image-->
         </ul>
     </header>
     <main>
-        <h1>Google</h1>
-        <!--Put textbox here-->
-        <!--put 2 buttons here-->
+        <h1>Google</h1><input size="56"/>
+        <br>
+        <br>
+        <input type="submit" value="Google Search">
+        <input type="submit" value="I'm feeling lucky. . .">
     </main>
     <footer><ul class="left">
             <li><a href="">Advertising</a></li>
